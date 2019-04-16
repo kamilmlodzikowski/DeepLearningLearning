@@ -6,8 +6,8 @@ from tqdm import tqdm
 import random
 
 
-DATADIR = "/home/gondzon/NiOSR/deep/dice/train"
-TESTDIR = "/home/gondzon/NiOSR/deep/dice/valid"
+DATADIR = "/home/justyna/DeepLearningLearning/dice/train"
+TESTDIR = "/home/justyna/DeepLearningLearning/deep/dice/valid"
 
 CATEGORIES = ["d4", "d6", "d8","d10","d12", "d20"]
 
@@ -19,7 +19,7 @@ for category in CATEGORIES:
         break  
     break  
 
-IMG_SIZE = 70
+IMG_SIZE = 100
 new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
 new_array2 = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
 
